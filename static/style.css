@@ -1,0 +1,275 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Default */
+
+body {
+	background: #e6e7e8 url(img/background.png) no-repeat center top fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	width: 980px;
+}
+hr, legend { display: none }
+a { text-decoration: none }
+b { font-weight: bold }
+button { cursor: pointer }
+
+.semborda { border: 0 none !important }
+.antispam { display: none }
+
+/* Layout */
+
+#head {
+	background: #fff;
+	height: 180px;
+	padding: 30px 35px 0;
+	position: relative;
+	z-index: 10;
+}
+#body {
+	background: #fff;
+	min-height: 413px;
+	overflow: hidden;
+	padding: 0 35px 20px;
+}
+#foot {
+	background: #fff;
+	clear: both;
+	padding: 15px 35px;
+}
+
+/* Header */
+
+#logo {
+	float: left;
+	margin: 0 14px 0 0;
+	padding: 0 0 0 38px;
+}
+
+#menu {
+	float: left;
+	font-size: 13px;
+	padding: 110px 0 0;
+	text-transform: lowercase;
+}
+.menu-item {
+	float: left;
+	margin: 0 0 0 28px;
+	position: relative;
+}
+.menu-item a {
+	color: #052e5f;
+	display: inline-block;
+	padding: 4px 10px;
+}
+.menu-item a:hover,
+.menu-item a:focus,
+.menu-item a:active {
+	background: #6990a2;
+	color: #fff;
+}
+.sub-menu {
+	background: #e7e7e8;
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 21px;
+	width: 100%;
+}
+.menu-item:hover .sub-menu { display: block }
+.sub-menu .menu-item {
+	border-top: 2px solid #fff;
+	float: none;
+	margin: 0;
+}
+.sub-menu .menu-item a {
+	display: block;
+	padding-bottom: 5px;
+	padding-tp[: 5px;
+}
+
+#i18n {
+	float: right;
+	padding: 112px 0 0;
+}
+
+#searchform {
+	background: url(img/squares.png) no-repeat left center;
+	position: absolute;
+	right: 35px;
+	text-align: right;
+	top: 30px;
+	width: 290px;
+}
+#searchform label {
+	color: #052e5f;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 0 5px 0 0;
+	text-transform: uppercase;
+}
+#s {
+	border: 1px solid #c1cad2;
+	font-size: 13px;
+	margin: 0;
+	padding: 3px;
+	width: 128px;
+}
+#searchform button {
+	background: #a6c4d2;
+	border: 0 none;
+	float: right;
+	margin: 0 0 0 10px;
+	padding: 4px;
+}
+#searchform img { display: block }
+
+/* Footer */
+
+#hcard-soilution {
+	border-top: 1px solid #cbd3d9;
+	color: #042f5f;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding: 5px 0;
+	text-transform: uppercase;
+}
+
+/* Home */
+
+.home #body {
+	background: #fff url(img/img-home.jpg) no-repeat center top;
+	position: relative;
+}
+#group-1 {
+	float: left;
+	padding: 218px 0 0;
+	width: 224px;
+}
+#group-2 {
+	float: left;
+	width: 229px;
+}
+#group-3 {
+	float: left;
+	padding: 218px 0 0;
+	width: 457px;
+}
+.heading {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 30px 30px 45px 20px;
+	text-transform: uppercase;
+}
+.excerpt {
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 0 30px 15px 20px;
+}
+#group-1 .heading { color: #739eb3 }
+#group-2 .heading { color: #062f5f }
+#group-3 .heading,
+#group-3 .excerpt { color: #052e5f }
+
+/* Pages */
+
+.page-title {
+	border-bottom: 1px solid #cbd3d9;
+	color: #062f5f;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 0 0 2px 272px;
+	text-transform: uppercase;
+}
+.page-content {
+	border-left: 224px solid #b4ccd8;
+	color: #666;
+	font-size: 13px;
+	line-height: 1.4em;
+	padding: 0 0 0 48px;
+	position: relative;
+}
+.page-image {
+	height: 250px;
+	left: -224px;
+	position: absolute;
+	top: -1px;
+	width: 224px;
+}
+.page-quem-somos .page-image { background: url(img/img-mangue.jpg) }
+.page-servicos .page-image { background: url(img/img-barro.jpg) }
+.page-clientes .page-image { background: url(img/img-terra.jpg) }
+.page-contato .page-image { background: url(img/img-estalactites.jpg) }
+
+.page-content p { padding: 1.4em 0 0 }
+.page-content h2,
+.page-content h3,
+.page-content h4 {
+	color: #c60;
+	margin-bottom: -1.4em;
+}
+.alignleft {
+	float: left;
+	margin: .4em 1.4em 1.0em 0;
+}
+.alignright {
+	float: right;
+	margin: .4em 0 1.0em 1.4em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 1.4em auto 0;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter { border: 1px solid #6e94a5 }
+
+/* Clientes */
+
+.page-clientes .page-content { padding-left: 17px }
+.page-content .clients {
+	font-size: 13px;
+	overflow: hidden;
+	padding: 0;
+}
+.client {
+	float: left;
+	margin: 1.4em 0 0 31px;
+}
+
+/* Contato */
+
+.page-content .vcard {
+	color: #3b6185;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 4.2em;
+	width: 230px;
+}
+
+#contactform input,
+#contactform textarea {
+	border: 1px solid #c1cad2;
+	font-size: 13px;
+	padding: 2px;
+	width: 340px;
+}
+#contactform .submit {
+	margin: -27px 0 0;
+	padding: 0 0 0 355px;
+}
+#contactform button {
+	background: #a6c4d2;
+	border: 0 none;
+	color: #062f5f;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin: -1.4em 0 0;
+	padding: 4px 8px;
+	text-transform: uppercase;
+}
